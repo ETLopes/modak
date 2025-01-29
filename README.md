@@ -3,7 +3,7 @@
 
 ## Prerequisites
 
-- **Node.js** (version 18 or higher)
+- **Node.js** (version 18.19.0)
 - **npm** or **Yarn**
 - **Expo CLI**
 
@@ -24,7 +24,7 @@ npm install -g expo-cli
 2. **Navigate to the project directory:**
 
    ```bash
-   cd modak/expo-calendar-reminder
+   cd modak
    ```
 
 3. **Install dependencies:**
@@ -45,9 +45,17 @@ npm install -g expo-cli
 
 Start the development server:
 
-```bash
-yarn start
-```
+  Using npm:
+
+  ```bash
+  npm run start
+  ```
+
+  Or using yarn:
+
+  ```bash
+  yarn start
+  ```
 
 This will launch the Metro bundler and provide options to run the app on an emulator or physical device.
 
@@ -61,6 +69,7 @@ This will launch the Metro bundler and provide options to run the app on an emul
 - The app uses error handling and loading states during API calls.
 
 - Because of time constraints, the app does not implement the bonus points or additional bonus features.
+- The sorting algorithm for the products is implemented either by price or rating. Additional sorting options such as relating price to rating were not implemented.
 - The Native module for adding a product purchase reminder into the user's calendar was not implemented although it was considered. The integration with expo was not straightforward and would require more time to implement.
 
 
