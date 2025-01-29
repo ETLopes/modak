@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "ExpoCalendarReminderModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.calendarreminder.ExpoCalendarReminderModule"
+    ]
+  }
+}

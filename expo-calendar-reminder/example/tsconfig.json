@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-calendar-reminder": ["../src/index"],
+      "expo-calendar-reminder/*": ["../src/*"]
+    }
+  }
+}
