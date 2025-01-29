@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 import { fetchProducts, fetchCategories } from '../../services/api';
 import { CategoriesModal } from '@/components/Modal';
 import { ProductsList } from '@/components/ProductsList';
-import { Header } from '@/components/Header';
+import { Header, SortOption } from '@/components/Header';
 import { Product } from '@/types/Product';
 import { Category } from '@/types/Category';
 import { ProductItem } from '@/components/ProductItem';
@@ -11,9 +11,9 @@ import { ProductItem } from '@/components/ProductItem';
 export default function HomeScreen() {
   const [products, setProducts] = useState<Array<Product>>([]);
   const [categories, setCategories] = useState<Category[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [sortOption, setSortOption] = useState('price');
-  const [isPickerVisible, setPickerVisible] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [sortOption, setSortOption] = useState<SortOption>('price');
+  const [isPickerVisible, setPickerVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const loadInitialData = async () => {
